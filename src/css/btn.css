@@ -1,0 +1,34 @@
+.main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 700;
+
+    background: linear-gradient(90deg,#6850ff,#a750ff);
+    margin: 10px 15px;
+
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.main-btn:hover {
+    transform: scale(1.1);
+}
+
+.main-btn img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.btn-success {
+    background-color: rgb(68, 179, 127) !important;
+}
+.btn-success:hover {
+    background-color: rgb(53, 136, 97) !important;
+}
+.btn-warning {
+    background-color: #ffc107 !important;
+}
+.btn-warning:hover {
+    background-color: #c39406 !important;
+}
