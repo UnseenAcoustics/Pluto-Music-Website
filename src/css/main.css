@@ -1,0 +1,145 @@
+main {
+    font-family: 'Poppins', sans-serif;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 5em;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrap img {
+    width: 150px;
+
+    animation: logo 2s ease-in-out 0s infinite;
+}
+
+@keyframes logo{
+    0% {
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+
+.wrap h1 {
+    letter-spacing: 5px;
+    margin-top: 50px;
+    cursor: default;
+}
+
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#dashboard-btn {
+    background: linear-gradient(90deg,#058cfb,#0026ff);
+}
+
+#gear {
+    transition: transform .25s ease-in-out;
+}
+
+.main-btn:hover #gear {
+    transform: rotate(90deg);
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards hr {
+    display: none;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    cursor: default;
+
+    margin: 75px 0;
+}
+
+.card img {
+    width: 500px;
+    border-radius: 5px;
+    filter:drop-shadow(2px 2px 2px black);
+}
+
+.text p{
+    color: grey;
+    max-width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1200px){
+    .card{
+        flex-wrap: wrap;
+    }
+    .text{
+        margin-top: 20px;
+    }
+
+    .card p {
+        max-width: 100%;
+    }
+
+    .cards hr {
+        display: block;
+        width: 100%;
+        border: 1px solid rgba(255,255,255,0.1);
+        margin: 75px 0;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .card img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .card img {
+        width: 200px;
+    }
+}

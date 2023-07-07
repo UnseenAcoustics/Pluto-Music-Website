@@ -1,0 +1,33 @@
+footer {
+    background-color: rgb(23, 24, 27);
+    color: white;
+    padding: 30px 0px;
+}
+
+.section {
+    max-width: 80%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 20px 0px;
+    border-bottom: .5px solid grey;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.link {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.copyright {
+    cursor: default;
+}
